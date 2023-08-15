@@ -8,6 +8,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 4. In route "/details/:movieID", we can see details of a given movie
 5. Both the routes contain a home button in the header, which redirect to route "/" (without query parameter)
 
+Following are some of the screenshots from the application hosted at https://gsiv-23-vinay-suyal.vercel.app/
+1. Home Page (Containing List of movies)
+![image](https://github.com/vinaysuyal/GSIV23_Vinay_Suyal/assets/47267619/0df628ae-ab3f-4436-affb-ef1086daa8f2)
+
+2. On searching for a movie and pressing enter(see URL in the screenshot)
+![image](https://github.com/vinaysuyal/GSIV23_Vinay_Suyal/assets/47267619/eff1d513-9dac-4fa0-9a1d-3e7a86a07ad2)
+
+3. On Clicking on a movie card, we get routed to details page with ID of that movie(see URL)
+![image](https://github.com/vinaysuyal/GSIV23_Vinay_Suyal/assets/47267619/2467d891-94d5-4311-8aaf-996316a530b4)
+
 ### Here are some of the features of the app:
 Displaying Movie Cards:
 On the List page, I've implemented the display of upcoming movies in movie cards. Each movie card showcases the movie media, title, rating, and a truncated description.
