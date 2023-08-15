@@ -12,7 +12,6 @@ const Home = () => {
   const [page, setPage] = useState(1);
   const [movieList, setMovieList] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(loading);
   useEffect(() => {
     if (!searchParams.get("query")?.trim())
       getUpcomingMovies(page)
