@@ -1,70 +1,50 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
+### How to run the application?
+Open the base directory in the terminal and run the following commands: npm start
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. There are two routes available "/" and "/detail/:movieID" 
+2. In route "/", if there is an optional parameter query present, the application makes an API call to search for the movie name in the query.
+3. From the list of movies, we can click on a movie card and get directed to "/details/:movieID"
+4. In route "/details/:movieID", we can see details of a given movie
+5. Both the routes contain a home button in the header, which redirect to route "/" (without query parameter)
 
-### `npm test`
+Following are some of the screenshots from the application hosted at https://gsiv-23-vinay-suyal.vercel.app/
+1. Home Page (Containing List of movies)
+![image](https://github.com/vinaysuyal/GSIV23_Vinay_Suyal/assets/47267619/0df628ae-ab3f-4436-affb-ef1086daa8f2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. On searching for a movie and pressing enter(see URL in the screenshot)
+![image](https://github.com/vinaysuyal/GSIV23_Vinay_Suyal/assets/47267619/eff1d513-9dac-4fa0-9a1d-3e7a86a07ad2)
 
-### `npm run build`
+3. On Clicking on a movie card, we get routed to details page with ID of that movie(see URL)
+![image](https://github.com/vinaysuyal/GSIV23_Vinay_Suyal/assets/47267619/2467d891-94d5-4311-8aaf-996316a530b4)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Here are some of the features of the app:
+Displaying Movie Cards:
+On the List page, I've implemented the display of upcoming movies in movie cards. Each movie card showcases the movie media, title, rating, and a truncated description.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Infinite Scrolling / Paging:
+I've incorporated either infinite scrolling or paging (buttons for navigation) to allow users to explore the list of upcoming movies beyond what's initially visible.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Search Functionality:
+I've integrated the search API, enabling users to search for movies. Search results are displayed on the List page itself. Upon canceling the search, the page reverts to showing all movies as requested.
 
-### `npm run eject`
+Navigating to Details Page:
+Clicking on a movie card leads users to the Details page, where comprehensive movie details are presented, including title, rating, year of release, length, director, cast, and description. Users can return to the List page using either the browser's back button or the home button on the Details page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Responsive Design:
+The app's design is responsive and optimized for a minimum width of 512 pixels, ensuring a consistent and user-friendly experience across various devices and screen sizes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Routing:
+I've integrated a common routing library to manage navigation between the List and Details pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Unit Testing:
+I've written comprehensive unit tests to ensure the functionality and reliability of critical components and features. These unit tests cover scenarios such as rendering components, simulating user interactions, API calls, and state changes. By incorporating unit testing, I showcase my proficiency in creating robust and maintainable code.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### What more could be done?
+1. Handle movie details when certain information like length, cast information, director, etc are not available.
+2. Include Error boundaries for routes that are not present or when resources are not found.
+3. A better fallback mechanism when the list has yet not been loaded.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
