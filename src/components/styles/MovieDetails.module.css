@@ -3,6 +3,12 @@
   padding: auto;
   text-align: left;
 }
+@media screen and (max-width: 700px) {
+  .movieDetailsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .subInfo {
   display: flex;
 }

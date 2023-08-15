@@ -14,7 +14,7 @@ const MovieDetailComponent = ({ credits, movieDetail }) => {
   return (
     <div className={classes.movieDetailsContainer}>
       <div className="leftDetail">
-        <Card sx={{ borderRadius: "12px" }}>
+        <Card sx={{ borderRadius: "12px", width: "fit-content" }}>
           <CardMedia
             sx={{
               height: "276px",
