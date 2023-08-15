@@ -1,0 +1,11 @@
+.movieDetailsContainer {
+  display: flex;
+  padding: auto;
+  text-align: left;
+}
+.subInfo {
+  display: flex;
+}
+.pipeSeperator {
+  margin: 0px 0.5rem 0px 0.5rem;
+}
